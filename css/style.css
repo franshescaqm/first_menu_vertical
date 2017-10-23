@@ -8,10 +8,12 @@ header{
   padding-bottom: 0;
 }
 
+/*Englobando el listado de menu vertical*/
 nav{
     width: 200px;
 }
 
+/* Ordena la lista de menu */
 ul{
   margin: 0px;
   padding: 0px;
@@ -25,17 +27,17 @@ li{
 
 }
 
-/* el color de letra del menu (menos inicio), son de color negro */
+/* El color de letra del menu (menos inicio), son de color negro */
 ul li a{
   color: black;
 }
 
-/* Esto nos indoca que la primera opción estara como anaranjado */
+/* Esto nos indica que la primera opción estara como anaranjado */
 ul li:first-child{
   background: #ffbf00; /*orange-yellow*/
 }
 
-/*El color predeterminado de la primera opción "inicio" sera predeterminadamente blanco*/
+/*El color predeterminado de la primera opción "Inicio" sera predeterminadamente blanco*/
 ul li:first-child a{
   color: white;
 }
@@ -45,7 +47,7 @@ ul li:first-child a:hover{
   color:black;
 }
 
-/*dentro del listado, estamos poniendo el menu como bloque para que el contenido sea mas englobado y text-decoration nos ayuda a quitar el delineado que sale por default.*/
+/*Dentro del listado, estamos poniendo el menu como bloque para que el contenido sea mas englobado y text-decoration nos ayuda a quitar el delineado que sale por default.*/
 a{
   display: block;
   text-decoration: none;
