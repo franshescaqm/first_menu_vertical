@@ -1,0 +1,71 @@
+body{
+  font-family: sans-serif;
+}
+
+header{
+  /*background: #f5f5f5; /*light gray*/
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+nav{
+    width: 200px;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  background: #f5f5f5; /*light gray*/
+  line-height: 25px;
+}
+
+/* Este elemenoto hara que los margenes de la lista desordenada no aparescan al costado*/
+li{
+    list-style: none;
+
+}
+
+/* el color de letra del menu (menos inicio), son de color negro */
+ul li a{
+  color: black;
+}
+
+/* Esto nos indoca que la primera opción estara como anaranjado */
+ul li:first-child{
+  background: #ffbf00; /*orange-yellow*/
+}
+
+/*El color predeterminado de la primera opción "inicio" sera predeterminadamente blanco*/
+ul li:first-child a{
+  color: white;
+}
+
+/*Esta opción hace que las letras del primer menu, se transforme en negro cuando el mouse pasa encima*/
+ul li:first-child a:hover{
+  color:black;
+}
+
+/*dentro del listado, estamos poniendo el menu como bloque para que el contenido sea mas englobado y text-decoration nos ayuda a quitar el delineado que sale por default.*/
+a{
+  display: block;
+  text-decoration: none;
+  padding-left: 10px;
+  color: black;
+}
+
+/*Cuando el Mouse pasa encima de todo el menu vertical, se convertira en un Gris mas oscuro*/
+a:hover{
+    background: #c4c3d0; /*light gray*/
+}
+
+/*Cuando se haga click en la primera opción de menu "inicio", la letra que estaba en negro, se convertira en blanco */
+ul li:first-child a:active{
+background-color:#36454f; /*dark gray*/
+color: white;
+}
+
+/*Cuando pasemos con el mouse por todo el menu, el color de fondo sera un gris casi oscuro y las letras seran, solo por ese momento, blancas, menos el primero*/
+a:active{
+background-color:#36454f; /*dark gray*/
+color: white;
+}
